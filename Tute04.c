@@ -22,21 +22,30 @@ int main() {
 }
 int minimum(int no1,int no2)
 {
-  int min;
-  min = no1 - no2;
-  return minimum(no1, no2);
+  if(no1 < no2)
+  {
+    return no1;
+  }
+  else
+  {
+    return no2;
+  }
 }
 int maximum(int no1,int no2)
 {
-  int max;
-  max = no1 + no2;
-  return maximum(no1, no2);
+  if(no1 > no2)
+  {
+    return no1;
+  }
+  else 
+  {
+    return no2;
+  }
+  
 }
 int multiply(int no1,int no2)
 {
-  int mul;
-  mul = no1 * no2;
-  return multiply(no1, no2);
+  return no1*no2;
 }
 
 
